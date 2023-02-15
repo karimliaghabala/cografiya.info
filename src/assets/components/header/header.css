@@ -1,0 +1,25 @@
+
+header{
+    display: flex;
+    background: url(../../images/header-bg.jpg);
+    max-width: 940px;
+    height: 195px;
+    margin: auto;
+}
+.navbar{
+    height: 60px;
+}
+.navbar ul li{
+    display: inline-block;
+    justify-content: center;
+}
+li a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+
+.search{
+    height: 135px;
+}
