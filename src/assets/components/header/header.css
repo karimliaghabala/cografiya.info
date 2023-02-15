@@ -26,7 +26,7 @@ li a{
 }
 a:hover{
     
-    border-bottom: 5px solid;
+    border-bottom: 2px solid;
     color: rgb(119, 119, 216);
     transition: 0.1s;
 }

@@ -80,7 +80,36 @@
     position: relative;
     left: 45px;
 }
-.text{
+.right-section>:nth-child(2){
     position: relative;
-    
+    bottom: 230px;
+    left: 90px;
+    letter-spacing: 5px;
+    font-size: 28px;
+    color: white;
+    font-weight: 900;
+}
+.right-section>:nth-child(3){
+    position: relative;
+    bottom: 200px;
+    left: 150px;
+    letter-spacing: 5px;
+    font-size: 28px;
+    color: white;
+    font-weight: 900;
+}
+.right-section>:nth-child(4){
+    position: relative;
+    bottom: 170px;
+    left: 140px;
+    letter-spacing: 5px;
+    font-size: 28px;
+    color: white;
+    font-weight: 900;
+}
+.all-news{
+    width: 600px;
+    position: relative;
+    left: 45px;
+    top:-100px
 }

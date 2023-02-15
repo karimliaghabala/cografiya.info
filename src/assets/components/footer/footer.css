@@ -1,0 +1,23 @@
+.footer{
+    display: block;
+    background:url(../../images/tempsnip.png);
+    max-width: 940px;
+    height: 100px;
+    margin: auto;
+}
+.footer ul li{
+    display: inline-block;
+    position: relative;
+    left: 152px
+}
+.footer .ul{
+    position: relative;
+    right: 90px;
+    top: 20px;
+}
+.ka{
+    display: flex;
+    position: relative;
+    top: 30px;
+    justify-content: center;
+}

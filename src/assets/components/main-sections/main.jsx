@@ -1,10 +1,12 @@
 import React from 'react'
 import './main.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Img from '../../images/newsletter-bg.gif'
 import Banner from '../../images/banner-bg.jpg'
+import { Routes, Route } from 'react-router-dom';
+import Contact from '../contact/contact';
 
-export const Main = () => {
+const Main = () => {
     return (
         <main>
             <div className="container-main">
@@ -37,16 +39,29 @@ export const Main = () => {
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
                         </div>
                     </div>
+                    <div className="fresh-news">
+                        <p>YENI</p>
+                        <p>XƏBƏRLƏR</p>
+                        <div className="news">
+                            <p>June 30, 2010</p>
+                            <Link to='/'>Sed ut perspiciatis unde</Link>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="right-section">
                     <img src={Banner} alt="" />
-                    <div className="text">
-                        <p>PROFESSİONAL </p>
-                        <p>TƏHSİL</p>
-                        <p>PORTALI</p>
+                    <p>PROFESSİONAL </p>
+                    <p>TƏHSİL</p>
+                    <p>PORTALI</p>
+                    <div className='all-news'>
+                        <Routes>
+                            <Route path='/contact' element={<Contact />} />
+                        </Routes>
                     </div>
                 </div>
             </div>
         </main>
     )
 }
+export default Main
