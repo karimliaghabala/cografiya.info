@@ -15,7 +15,18 @@ const Header = () => {
             <li><Link to='/'>SAYTIN XƏRİTƏSİ</Link></li>
           </ul>
         </div>
-        <div className="search">s</div>
+        <div className="header-bottom">
+          <div className="h1">
+            <p>TƏHSİL MİLLƏTİN GƏLƏCƏYİDİR</p>
+            <p>HEYDƏR ƏLİYEV</p>
+          </div>
+          <div className="search">
+            <form>
+            <input type="text" />
+            <Link to='/'>SEARCH</Link>
+            </form>
+          </div>
+        </div>
       </div>
     </header>
   )

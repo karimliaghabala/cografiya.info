@@ -7,19 +7,72 @@ header{
     margin: auto;
 }
 .navbar{
+    position: relative;
+    left:17%;
+    top: 8%;
     height: 60px;
 }
 .navbar ul li{
     display: inline-block;
     justify-content: center;
+    letter-spacing: 1px;
 }
 li a{
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
+    margin: 5px;
     font-size: 14px;
+    font-weight: 500;
+}
+a:hover{
+    
+    border-bottom: 5px solid;
+    color: rgb(119, 119, 216);
+    transition: 0.1s;
 }
 
-
-.search{
+.header-bottom{
+    display: flex;
     height: 135px;
+}
+.h1>:nth-child(1){
+    font-size: 34px;
+    font-weight: 700;
+    position: relative;
+    left:60px;
+    top: 10px;
+    letter-spacing: 5px;
+}
+.h1>:nth-child(2){
+    font-size: 26px;
+    font-weight: 500;
+    color:#837878;
+    font-style: italic;
+    position: relative;
+    left:28rem;
+    top: 20px;
+}
+.search form{
+    position: relative;
+    top: 5.5rem;
+    left: 1rem;
+}
+.search input{
+    width: 200px;
+    height: 30px;
+    background-color: #f1f0f0;
+    border: 1px solid #837878;
+}
+.search a{
+    height: 30px;
+    text-decoration: none;
+    background-color: blue;
+    padding: 6px;
+    color:white;
+    font-size: 14px;
+    margin: 5px;
+    font-weight: 500;
+}
+.search a:hover{
+    background-color: rgb(128, 128, 240);
 }
