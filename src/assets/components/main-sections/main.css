@@ -15,14 +15,14 @@
     position: relative;
     padding: 10px;
     margin: 10px;
-    left: 50px;
+    left: 25px;
 }
 .category li{
     list-style: none;
     margin: 20px;
 }
 .category li a{
-    font-size: 16px;
+    font-size: 14px;
     color: blue;
 }
 .category li:hover{
@@ -35,4 +35,52 @@
 .category p{
     font-size: 22px;
     font-weight: 600;
+    position: relative;
+    left: 5px;
+}
+.sub-news{
+    position: relative;
+    left: 50px;
+}
+.sub-news p{
+    position: relative;
+    bottom:120px;
+    left: 27px;
+    color:aliceblue
+}
+.sub-news form>:nth-child(2){
+    display: block;
+    position: relative;
+    bottom: 100px;
+    left: 27px;
+}
+.sub-news form>:nth-child(3){
+    position: relative;
+    bottom: 80px;
+    left: 125px;
+    background-color: rgb(110, 110, 233);
+    border: 1px solid rgb(32, 84, 255);
+    font-size: 14px;
+    padding: 2px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.sub-news form>:nth-child(3):hover{
+    border: 1px solid white;
+}
+
+.fresh-news{
+    position: relative;
+    left: 50px;
+    width: 230px;
+}
+.right-section img{
+    width: 600px;
+    height: 250px;
+    position: relative;
+    left: 45px;
+}
+.text{
+    position: relative;
+    
 }
