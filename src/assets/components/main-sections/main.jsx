@@ -13,6 +13,7 @@ import News from '../news/news'
 import Tests from '../categories/tests/ksqbsq';
 import Trails from '../categories/trails/trails';
 import Mycountry from '../categories/mycountry/mycountry';
+import Newstext from '../news/newstext';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -75,6 +76,7 @@ const Main = () => {
                             <Route path='/tests' element={<Tests />} />
                             <Route path='/trails' element={<Trails />} />
                             <Route path='/mycountry' element={<Mycountry />} />
+                            <Route path='/newstext' element={<Newstext />} />
                         </Routes>
                     </div>
                 </div>

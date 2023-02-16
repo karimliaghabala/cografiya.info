@@ -1,61 +1,32 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './news.css'
-import NewsImg from '../../images/geo.jpeg'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const News = () => {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    fetch('https://api-portal-five.vercel.app/')
+      .then(res => res.json())
+      .then(apiData => setData(apiData))
+  }, [])
+  console.log(data[0])
   return (
     <>
-    <div className='news-i'>
-        <div className="img-new">
-          <img src={NewsImg} alt="" />
-        </div>
-        <div className="news-text">
-        <h3 className='h3'>Coğrafiya təbiət  elmləri sistemində</h3>
-        <p>Coğrafiya (yun. γεωγραφία, yerin təsviri, γεια — Yer, torpaq və γραφειν — yazmaq, təsvir etmək) — təbii və istehsal ərazi komplekslərini və onların komponentlərini tədqiq edən təbiət və ictimai elmlər sistemi. </p>
-        <Link to='/'>Davamını oxu</Link>
-        </div>
-    </div>
-        <div className='news-i'>
-        <div className="img-new">
-          <img src={NewsImg} alt="" />
-        </div>
-        <div className="news-text">
-        <h3 className='h3'>Coğrafiya təbiət  elmləri sistemində</h3>
-        <p>Coğrafiya (yun. γεωγραφία, yerin təsviri, γεια — Yer, torpaq və γραφειν — yazmaq, təsvir etmək) — təbii və istehsal ərazi komplekslərini və onların komponentlərini tədqiq edən təbiət və ictimai elmlər sistemi. </p>
-        <Link to='/'>Davamını oxu</Link>
-        </div>
-    </div>
-        <div className='news-i'>
-        <div className="img-new">
-          <img src={NewsImg} alt="" />
-        </div>
-        <div className="news-text">
-        <h3 className='h3'>Coğrafiya təbiət  elmləri sistemində</h3>
-        <p>Coğrafiya (yun. γεωγραφία, yerin təsviri, γεια — Yer, torpaq və γραφειν — yazmaq, təsvir etmək) — təbii və istehsal ərazi komplekslərini və onların komponentlərini tədqiq edən təbiət və ictimai elmlər sistemi. </p>
-        <Link to='/'>Davamını oxu</Link>
-        </div>
-    </div>
-    <div className='news-i'>
-        <div className="img-new">
-          <img src={NewsImg} alt="" />
-        </div>
-        <div className="news-text">
-        <h3 className='h3'>Coğrafiya təbiət  elmləri sistemində</h3>
-        <p>Coğrafiya (yun. γεωγραφία, yerin təsviri, γεια — Yer, torpaq və γραφειν — yazmaq, təsvir etmək) — təbii və istehsal ərazi komplekslərini və onların komponentlərini tədqiq edən təbiət və ictimai elmlər sistemi. </p>
-        <Link to='/'>Davamını oxu</Link>
-        </div>
-    </div>
-    <div className='news-i'>
-        <div className="img-new">
-          <img src={NewsImg} alt="" />
-        </div>
-        <div className="news-text">
-        <h3 className='h3'>Coğrafiya təbiət  elmləri sistemində</h3>
-        <p>Coğrafiya (yun. γεωγραφία, yerin təsviri, γεια — Yer, torpaq və γραφειν — yazmaq, təsvir etmək) — təbii və istehsal ərazi komplekslərini və onların komponentlərini tədqiq edən təbiət və ictimai elmlər sistemi. </p>
-        <Link to='/'>Davamını oxu</Link>
-        </div>
-    </div>
+      <ul>
+        {data?.map(item => (
+          <li key={item.id}  className='news-i'>
+              <div className="img-new">
+                <img src={item.linkimg} alt="" />
+              </div>
+              <div className="news-text">
+                <h3 className='h3'>{item.title}</h3>
+                <Link to='/newstext'>Ətraflı oxu</Link>
+              </div>
+          </li>
+        ))}
+      </ul>
+
+
     </>
   )
 }

@@ -6,7 +6,7 @@
     border-top: 1px dotted black;
 }
 .img-new img{
-    width: 180px;
+    width: 230px;
     height: 150px;
     margin: 10px;
 }
@@ -17,9 +17,41 @@
     color: blue;
     margin:10px 0
 }
-.news-text>:nth-child(3){
+.news-text>:nth-child(2){
     margin:10px 0;
     position: relative;
     left: 200px;
     text-decoration: none;
+}
+.newstext{
+    list-style: none;
+}
+.newstext>img{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 80px;
+}
+.title{
+    text-align: center;
+    color: blue;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.datatime{
+    margin: 10px 0;
+    font-weight: 500;
+    font-style: italic;
+}
+.content{
+    font-size:18px;
+    width: 590px;
+    text-align: justify;
+}
+.author{
+    position: relative;
+    left: 400px;
+    margin: 20px 0;
+    font-weight: 900;
+    font-style: italic;
 }
