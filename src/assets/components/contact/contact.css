@@ -1,0 +1,32 @@
+h2{
+    font-size: 28px;
+}
+h2>span{
+    color: rgb(145, 143, 140);
+}
+#contacts-form input {
+    width: 277px;
+    padding: 2px 0 2px 3px;
+    border: 1px solid #d1d1d1;
+    color: #70635b;
+    margin: 5px 0
+}
+
+#contacts-form label {
+    float: left;
+    width: 123px;
+    font-weight: bold;
+    color: #008cc4;
+    margin: 5px 0
+}
+#contacts-form textarea {
+    width: 503px;
+    height: 252px;
+    padding: 2px 0 2px 3px;
+    border: 1px solid #d1d1d1;
+    color: #70635b;
+    overflow: auto;
+}
+#contacts-form{
+    margin-top: 30px;
+}

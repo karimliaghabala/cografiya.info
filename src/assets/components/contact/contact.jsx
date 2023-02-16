@@ -4,27 +4,23 @@ import './contact.css'
 const Contact = () => {
   return (
     <>
-    <h2>Contact <span>Form</span></h2>
+    <h2>BİZİMLƏ <span>ƏLAQƏ</span></h2>
         <form id="contacts-form" action="#">
-          <fieldset>
+          <div>
             <div class="field">
-              <label>Your Name:</label>
+              <label>Ad və Soyad:</label>
               <input type="text" value=""/>
             </div>
             <div class="field">
-              <label>Your E-mail:</label>
+              <label> E-mail :</label>
               <input type="email" value=""/>
             </div>
-            <div class="field">
-              <label>Your Website:</label>
-              <input type="text" value=""/>
-            </div>
             <div class="field extra">
-              <label>Your Message:</label>
+              <label>Sənin məktubun:</label>
               <textarea cols="1" rows="1"></textarea>
             </div>
-            <div class="alignright"><a href="#">Send Your Message!</a></div>
-          </fieldset>
+            <div class="alignright"><a href="#">GÖNDƏR</a></div>
+          </div>
         </form>
         </>
   )
