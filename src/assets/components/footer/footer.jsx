@@ -11,7 +11,7 @@ const Footer = () => {
                     <li><Link to='/about'>HAQQIMIZDA</Link></li>
                     <li><Link to='/'>MƏQALƏLƏRİMİZ</Link></li>
                     <li><Link to='/contact'>BİZİMLƏ ƏLAQƏ</Link> </li>
-                    <li><Link to='/'>SAYTIN XƏRİTƏSİ</Link></li>
+                    <li><Link to='/sitemap'>SAYTIN XƏRİTƏSİ</Link></li>
                 </ul>
                 <ul className='ul'>
                     <li> <Link to='/'>KSQ/BSQ nümunələr </Link></li>

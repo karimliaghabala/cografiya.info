@@ -30,7 +30,6 @@ a:hover{
     color: rgb(119, 119, 216);
     transition: 0.1s;
 }
-
 .header-bottom{
     display: flex;
     height: 135px;

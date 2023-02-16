@@ -8,7 +8,14 @@
 .footer ul li{
     display: inline-block;
     position: relative;
-    left: 152px
+    left: 152px;
+}
+.ul li>a{
+    color: blue;
+}
+.ul li>a:hover{
+    color: rgb(255, 30, 0);
+    border-bottom: 1px dotted black;
 }
 .footer .ul{
     position: relative;

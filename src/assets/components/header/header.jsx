@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion';
 
 const Header = () => {
-  const transition = { type: 'spring', duration: 2 }
+  const transition = { type: 'spring', duration: 1 }
   return (
     <header>
       <div className="container-header">
@@ -18,7 +18,7 @@ const Header = () => {
             <li><Link to='/about'>HAQQIMIZDA</Link></li>
             <li><Link to='/'>XƏBƏRLƏR</Link></li>
             <li><Link to='/contact'>BİZİMLƏ ƏLAQƏ</Link> </li>
-            <li><Link to='/'>SAYTIN XƏRİTƏSİ</Link></li>
+            <li><Link to='/sitemap'>SAYTIN XƏRİTƏSİ</Link></li>
           </ul>
         </motion.div>
         <div className="header-bottom">

@@ -8,6 +8,7 @@ import Contact from '../contact/contact';
 import { motion } from 'framer-motion';
 import Home from '../home/home'
 import About from '../aboutme/about'
+import Sitemap from '../sitemap/sitemap'
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -27,6 +28,7 @@ const Main = () => {
                             <li> <Link to='/'>Ölkəmizi tanıyaq </Link></li>
                             <li> <Link to='/'>Coğrafiya gündəliyi  </Link></li>
                             <li> <Link to='/'>Xəritələr</Link></li>
+                            <li> <Link to='/'>Videolar</Link></li>
                             <li> <Link to='/'>Təhsil qanunu </Link></li>
                         </ul>
                     </motion.div>
@@ -64,6 +66,7 @@ const Main = () => {
                             <Route path='/contact' element={<Contact />} />
                             <Route path='/' element={<Home />} />
                             <Route path='/about' element={<About />} />
+                            <Route path='/sitemap' element={<Sitemap />} />
                         </Routes>
                     </div>
                 </div>
