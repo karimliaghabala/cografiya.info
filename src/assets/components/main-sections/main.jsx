@@ -6,7 +6,7 @@ import Banner from '../../images/banner-bg.jpg'
 import { Routes, Route } from 'react-router-dom';
 import Contact from '../contact/contact';
 import { motion } from 'framer-motion';
-import Geo from '../../images/WhatsApp Image 2023-02-15 at 20.25.12.jpeg'
+import Home from '../home/home'
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -59,9 +59,9 @@ const Main = () => {
                     <p>TƏHSİL</p>
                     <p>PORTALI</p>
                     <div className='all-news'>
-                        <img src={Geo} alt="" />
                         <Routes>
                             <Route path='/contact' element={<Contact />} />
+                            <Route path='/' element={<Home />} />
                         </Routes>
                     </div>
                 </div>
