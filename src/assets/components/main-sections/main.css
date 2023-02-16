@@ -99,7 +99,13 @@
 .news>:nth-child(3){
     margin: 10px 0;
 }
-
+.right-section{
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+.right-section::-webkit-scrollbar {
+    background-color: rgba(236, 236, 236, 0);
+}
 .right-section img{
     width: 600px;
     height: 250px;
