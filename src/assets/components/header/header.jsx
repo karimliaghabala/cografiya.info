@@ -36,8 +36,8 @@ const Header = () => {
           </div>
           <div className="search">
             <form>
-              <input type="text" />
-              <Link to='/'>SEARCH</Link>
+              <input type="text" placeholder='açar sözü daxil edin' />
+              <Link to='/'>Axtar</Link>
             </form>
           </div>
         </div>

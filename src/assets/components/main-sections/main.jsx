@@ -10,6 +10,7 @@ import Home from '../home/home'
 import About from '../aboutme/about'
 import Sitemap from '../sitemap/sitemap'
 import News from '../news/news'
+import Tests from '../categories/ksqbsq';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -24,7 +25,7 @@ const Main = () => {
                     >
                         <p>Kateqoriyalar</p>
                         <ul>
-                            <li> <Link to='/'>KSQ/BSQ nümunələr </Link></li>
+                            <li> <Link to='/tests'>KSQ/BSQ nümunələr </Link></li>
                             <li> <Link to='/'>Ümumi və mövzu sınaqları </Link></li>
                             <li> <Link to='/'>Ölkəmizi tanıyaq </Link></li>
                             <li> <Link to='/'>Coğrafiya gündəliyi  </Link></li>
@@ -37,7 +38,7 @@ const Main = () => {
                         <div><img src={Img} alt="" /></div>
                         <form>
                             <p>XƏBƏRLƏRƏ ABUNƏ OL</p>
-                            <input type="text" name="" id="" />
+                            <input type="text" placeholder='e-mail ünvanını daxil et' name="" id="" />
                             <input type="submit" value='GÖNDƏR' />
                         </form>
                     </div>
@@ -69,6 +70,7 @@ const Main = () => {
                             <Route path='/about' element={<About />} />
                             <Route path='/sitemap' element={<Sitemap />} />
                             <Route path='/news' element={<News />} />
+                            <Route path='/tests' element={<Tests />} />
                         </Routes>
                     </div>
                 </div>
