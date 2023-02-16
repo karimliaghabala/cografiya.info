@@ -35,7 +35,7 @@ const About = () => {
                     <img src={Namik} alt="" />
                     <p>Coğrafiya müəllimi</p>
                     <p>Direktor müavini</p>
-                    <p>Cəlilabad rayon Üçtəpə kənd tam orta məktəbi</p>
+                    <p>Cəlilabad rayon Polad Həşimov adına Üçtəpə kənd ümumi orta məktəbi</p>
                 </div>
             </div>
         </div>
