@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import Home from '../home/home'
 import About from '../aboutme/about'
 import Sitemap from '../sitemap/sitemap'
+import News from '../news/news'
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -67,6 +68,7 @@ const Main = () => {
                             <Route path='/' element={<Home />} />
                             <Route path='/about' element={<About />} />
                             <Route path='/sitemap' element={<Sitemap />} />
+                            <Route path='/news' element={<News />} />
                         </Routes>
                     </div>
                 </div>
