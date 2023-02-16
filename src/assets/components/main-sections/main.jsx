@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Contact from '../contact/contact';
 import { motion } from 'framer-motion';
 import Home from '../home/home'
+import About from '../aboutme/about'
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -62,6 +63,7 @@ const Main = () => {
                         <Routes>
                             <Route path='/contact' element={<Contact />} />
                             <Route path='/' element={<Home />} />
+                            <Route path='/about' element={<About />} />
                         </Routes>
                     </div>
                 </div>

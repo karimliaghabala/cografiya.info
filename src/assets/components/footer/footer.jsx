@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer">
                 <ul>
                     <li><Link to='/'>ANA SƏHİFƏ</Link></li>
-                    <li><Link to='/'>HAQQIMIZDA</Link></li>
+                    <li><Link to='/about'>HAQQIMIZDA</Link></li>
                     <li><Link to='/'>MƏQALƏLƏRİMİZ</Link></li>
                     <li><Link to='/contact'>BİZİMLƏ ƏLAQƏ</Link> </li>
                     <li><Link to='/'>SAYTIN XƏRİTƏSİ</Link></li>

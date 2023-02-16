@@ -15,7 +15,7 @@ const Header = () => {
         >
           <ul>
             <li><Link to='/'>ANA SƏHİFƏ</Link></li>
-            <li><Link to='/'>HAQQIMIZDA</Link></li>
+            <li><Link to='/about'>HAQQIMIZDA</Link></li>
             <li><Link to='/'>XƏBƏRLƏR</Link></li>
             <li><Link to='/contact'>BİZİMLƏ ƏLAQƏ</Link> </li>
             <li><Link to='/'>SAYTIN XƏRİTƏSİ</Link></li>

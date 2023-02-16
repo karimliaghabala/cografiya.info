@@ -1,0 +1,52 @@
+
+
+.about{
+    display: flex;
+}
+.about img{
+    width: 150px;
+    height: 150px;
+    margin: 5px 0;
+}
+
+.left-as{
+    margin-right: 150px;
+}
+.agabala, .agadadash{
+    margin-bottom: 50px;
+}
+.h1-name>:nth-child(1){
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+} 
+.h1-name p>span{
+    color: rgb(145, 143, 140);
+} 
+.h1-name>:nth-child(3){
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: blue;
+} 
+.agabala>:nth-child(4){
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: blue;
+}
+.namik>:nth-child(4){
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: blue;
+}
+.namik>:nth-child(5){
+    text-align: center;
+}
+.agabala>:nth-child(5){
+    text-align: center;
+}
+.h1-name>:nth-child(4){
+    text-align: center;
+} 
