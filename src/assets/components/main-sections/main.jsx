@@ -1,11 +1,11 @@
 import React from 'react'
 import './main.css'
 import { Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Img from '../../images/newsletter-bg.gif'
 import Banner from '../../images/banner-bg.jpg'
-import { Routes, Route } from 'react-router-dom';
 import Contact from '../contact/contact';
-import { motion } from 'framer-motion';
 import Home from '../home/home'
 import About from '../aboutme/about'
 import Sitemap from '../sitemap/sitemap'

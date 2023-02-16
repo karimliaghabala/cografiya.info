@@ -94,6 +94,7 @@
 .news>:nth-child(2){
     font-weight: 700;
     color: blue;
+    text-decoration: none;
 }
 .news>:nth-child(3){
     margin: 10px 0;
