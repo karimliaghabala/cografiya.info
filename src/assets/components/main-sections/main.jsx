@@ -14,6 +14,8 @@ import Tests from '../categories/tests/ksqbsq';
 import Trails from '../categories/trails/trails';
 import Mycountry from '../categories/mycountry/mycountry';
 import Newstext from '../news/newstext';
+import Geographynews from '../categories/geography/geography';
+import Geographynewstext from '../categories/geography/geographytext';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -31,7 +33,7 @@ const Main = () => {
                             <li> <Link to='/tests'>KSQ/BSQ nümunələr </Link></li>
                             <li> <Link to='/trails'>Ümumi və mövzu sınaqları </Link></li>
                             <li> <Link to='/mycountry'>Ölkəmizi tanıyaq </Link></li>
-                            <li> <Link to='/'>Coğrafiya gündəliyi  </Link></li>
+                            <li> <Link to='/geographynews'>Coğrafiya gündəliyi  </Link></li>
                             <li> <Link to='/'>Xəritələr</Link></li>
                             <li> <Link to='/'>Videolar</Link></li>
                             <li> <Link to='/'>Təhsil qanunu </Link></li>
@@ -76,7 +78,9 @@ const Main = () => {
                             <Route path='/tests' element={<Tests />} />
                             <Route path='/trails' element={<Trails />} />
                             <Route path='/mycountry' element={<Mycountry />} />
-                            <Route path='/newstext' element={<Newstext />} />
+                            <Route path='/newstext/:id' element={<Newstext />} />
+                            <Route path='/geographynews' element={<Geographynews />} />
+                            <Route path='/geographynewstext/:id' element={<Geographynewstext />} />
                         </Routes>
                     </div>
                 </div>

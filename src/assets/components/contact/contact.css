@@ -30,3 +30,17 @@ h2>span{
 #contacts-form{
     margin-top: 30px;
 }
+button{
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    background-color: #008cc4;
+    color: white;
+    position: relative;
+    left: 200px;
+    border: 1px solid rgb(83, 10, 218);
+}
+button:hover{
+    border: 1px solid white;
+    background-color: #55aed1;
+}

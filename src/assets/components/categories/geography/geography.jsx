@@ -1,16 +1,14 @@
 import React,{useState,useEffect} from 'react'
-import './news.css'
+import '../../news/news.css'
 import { Link } from 'react-router-dom'
 
-const News = () => {
+const Geographynews = () => {
   const [data, setData] = useState([])
-
   useEffect(() => {
     fetch('https://api-portal-five.vercel.app/')
       .then(res => res.json())
       .then(apiData => setData(apiData))
   }, [])
-
   return (
     <>
       <ul>
@@ -21,7 +19,7 @@ const News = () => {
               </div>
               <div className="news-text">
                 <h3 className='h3'>{item.title}</h3>
-                <Link to={`/newstext/${item.id}`}>Ətraflı oxu</Link>
+                <Link to={`/geographynewstext/${item.id}`}>Ətraflı oxu</Link>
               </div>
           </li>
         ))}
@@ -32,4 +30,4 @@ const News = () => {
   )
 }
 
-export default News
+export default Geographynews
