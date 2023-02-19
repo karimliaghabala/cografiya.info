@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './main.css'
 import { Link } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom';
@@ -19,6 +19,13 @@ import Geographynewstext from '../categories/geography/geographytext';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        fetch('https://api-portal-five.vercel.app/')
+            .then(res => res.json())
+            .then(apiData => setData(apiData))
+    }, [])
     return (
         <main>
             <div className="container-main">
@@ -50,16 +57,15 @@ const Main = () => {
                     <div className="fresh-news">
                         <p>YENI</p>
                         <p>XƏBƏRLƏR</p>
-                        <div className="news">
-                            <p>June 30, 2010</p>
-                            <Link to='/'>Sed ut perspiciatis unde</Link>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                        </div>
-                        <div className="news">
-                            <p>June 30, 2023</p>
-                            <Link to='/'>Sed ut perspiciatis unde</Link>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                        </div>
+                        <ul>
+                            {data?.map(item => (
+                                <li className="news">
+                                    <p>{item.published_date}</p>
+                                    <p>{item.title}</p>
+                                    <Link to='/news'>Ətraflı oxumaq üçün klik edin</Link>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
                 </div>
