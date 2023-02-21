@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Geographynews = () => {
   const [data, setData] = useState([])
   useEffect(() => {
-    fetch('https://api-portal-five.vercel.app/geo/2')
+    fetch('https://api-portal-five.vercel.app/')
       .then(res => res.json())
       .then(apiData => setData(apiData))
   }, [])
