@@ -59,7 +59,7 @@ const Main = () => {
                         <p>XƏBƏRLƏR</p>
                         <ul>
                             {data?.map(item => (
-                                <li className="news">
+                                <li className="news" key={item.id}>
                                     <p>{item.published_date}</p>
                                     <p>{item.title}</p>
                                     <Link to='/news'>Ətraflı oxumaq üçün klik edin</Link>
