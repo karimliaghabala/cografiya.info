@@ -7,7 +7,7 @@ const Geographynewstext = () => {
     const [data, setData] = useState([])
     const {id} = useParams()
     useEffect(() => {
-        fetch(`https://api-portal-five.vercel.app/${id}`)
+        fetch(`https://api-portal-five.vercel.app/geo/${id}`)
             .then(res => res.json())
             .then(apiData => setData(apiData))
     }, [id])
