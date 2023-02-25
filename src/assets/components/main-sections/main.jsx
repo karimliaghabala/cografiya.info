@@ -62,7 +62,7 @@ const Main = () => {
                                 <li className="news" key={item.id}>
                                     <p>{item.published_date}</p>
                                     <p>{item.title}</p>
-                                    <Link to='/news'>Ətraflı oxumaq üçün klik edin</Link>
+                                    <Link to={`/newstext/${item.id}`}>Ətraflı oxumaq üçün klik edin</Link>
                                 </li>
                             ))}
                         </ul>
