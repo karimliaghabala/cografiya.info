@@ -13,6 +13,9 @@
     position: relative;
     bottom: 33px;
 }
+.right-t>:nth-child(2){
+    background-color: rgba(0, 0, 255, 0.151);
+}
 .subjects a{
     display: block;
     text-decoration: none;
@@ -24,4 +27,42 @@
 }
 .subjects a:hover{
     color: red;
+}
+/* Geography test  */
+.container-gt{
+    display: flex;
+    justify-content: space-around;
+}
+.ksq{
+    border: 1px dotted black;
+    width: 280px;
+}
+
+.left-gt ul>li>li{
+    list-style: none;
+    text-align: center;
+    margin: 15px;
+}
+.left-gt ul>li{
+    list-style: none;
+    text-align: center;
+    margin: 15px;
+}
+.left-gt ul>li{
+    list-style: none;
+    background-color: rgba(56, 59, 221, 0.123);
+}
+.right-gt ul>li{
+    list-style: none;
+    text-align: center;
+    margin: 15px;
+}
+.right-gt ul>li>li{
+    list-style: none;
+    text-align: center;
+    margin: 15px;
+}
+.right-gt ul>li{
+    list-style: none;
+    background-color: rgba(56, 59, 221, 0.123);
 }

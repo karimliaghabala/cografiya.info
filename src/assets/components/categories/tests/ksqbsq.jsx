@@ -19,7 +19,7 @@ const Tests = () => {
             </div>
             <div className="right-t subjects">
                 <Link to='/'>Ədəbiyyat</Link>
-                <Link to='/'>Coğrafiya</Link>
+                <Link to='/geographytest'>Coğrafiya</Link>
                 <Link to='/'>Fizika</Link>
                 <Link to='/'>Biologiya</Link>
                 <Link to='/'>Kimya</Link>

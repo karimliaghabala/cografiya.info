@@ -9,6 +9,7 @@ const Geographynews = () => {
       .then(res => res.json())
       .then(apiData => setData(apiData))
   }, [])
+  data.reverse()
   return (
     <>
       <ul>

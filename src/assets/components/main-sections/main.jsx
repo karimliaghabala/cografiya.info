@@ -16,6 +16,7 @@ import Mycountry from '../categories/mycountry/mycountry';
 import Newstext from '../news/newstext';
 import Geographynews from '../categories/geography/geography';
 import Geographynewstext from '../categories/geography/geographytext';
+import Geographytest from '../categories/tests/geographytest';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -24,8 +25,9 @@ const Main = () => {
     useEffect(() => {
         fetch('https://api-portal-five.vercel.app/')
             .then(res => res.json())
-            .then(apiData => setData(apiData))
+            .then(apiData => setData(apiData.slice(2,4)))
     }, [])
+    data.reverse()
     return (
         <main>
             <div className="container-main">
@@ -60,7 +62,7 @@ const Main = () => {
                         <ul>
                             {data?.map(item => (
                                 <li className="news" key={item.id}>
-                                    <p>{item.published_date}</p>
+                                    <p>Vaxt: {item.published_date.slice(0,5)}</p>
                                     <p>{item.title}</p>
                                     <Link to={`/newstext/${item.id}`}>Ətraflı oxumaq üçün klik edin</Link>
                                 </li>
@@ -87,6 +89,8 @@ const Main = () => {
                             <Route path='/newstext/:id' element={<Newstext />} />
                             <Route path='/geographynews' element={<Geographynews />} />
                             <Route path='/geographynewstext/:id' element={<Geographynewstext />} />
+                            <Route path='/geographytest' element={<Geographytest />} />
+
                         </Routes>
                     </div>
                 </div>

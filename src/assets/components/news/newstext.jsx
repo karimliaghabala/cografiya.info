@@ -18,7 +18,7 @@ const Newstext = () => {
                     <li className='newstext' key={item.id}>
                         <img src={item.linkimg} className='linkimg' alt="" />
                             <h1 className='title'>{item.title}</h1>
-                            <p className='datatime'>{item.published_date}</p>
+                            <p className='datatime'> Vaxt:{item.published_date.slice(0,5)}</p>
                             <p className='content'>{item.content}</p>
                             <p className='author'>Redaktor:{item.author}</p>
                     </li>
