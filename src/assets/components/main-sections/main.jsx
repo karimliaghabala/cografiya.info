@@ -17,6 +17,7 @@ import Newstext from '../news/newstext';
 import Geographynews from '../categories/geography/geography';
 import Geographynewstext from '../categories/geography/geographytext';
 import Geographytest from '../categories/tests/geographytest';
+import Videos from '../categories/videos/videos';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -44,8 +45,8 @@ const Main = () => {
                             <li> <Link to='/mycountry'>Ölkəmizi tanıyaq </Link></li>
                             <li> <Link to='/geographynews'>Coğrafiya gündəliyi  </Link></li>
                             <li> <Link to='/'>Xəritələr</Link></li>
-                            <li> <Link to='/'>Videolar</Link></li>
-                            <li> <Link to='/'>Təhsil qanunu </Link></li>
+                            <li> <Link to='/videos'>Videolar</Link></li>
+                            <li> <Link to='https://e-qanun.az/framework/18343' target='_blank'>Təhsil qanunu </Link></li>
                         </ul>
                     </motion.div>
                     <div className="sub-news">
@@ -90,6 +91,7 @@ const Main = () => {
                             <Route path='/geographynews' element={<Geographynews />} />
                             <Route path='/geographynewstext/:id' element={<Geographynewstext />} />
                             <Route path='/geographytest' element={<Geographytest />} />
+                            <Route path='/videos' element={<Videos />} />
 
                         </Routes>
                     </div>
