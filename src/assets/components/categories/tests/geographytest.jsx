@@ -19,6 +19,8 @@ const Geographytest = () => {
     }, [])
     data2.reverse()
     return (
+    <>
+        <h1 className='con-hed'>COĞRAFİYA</h1>
         <div className="container-gt">
             <div className="left-gt">
                 <p>Kiçik Summativ Qiymətləndirmə</p>
@@ -45,6 +47,7 @@ const Geographytest = () => {
                 </ul>
             </div>
         </div>
+        </>
     )
 }
 

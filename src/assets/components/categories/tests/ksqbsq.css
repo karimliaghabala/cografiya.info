@@ -33,6 +33,11 @@
     display: flex;
     justify-content: space-around;
 }
+.con-hed{
+    display: block;
+    text-align: center;
+
+}
 .ksq{
     border: 1px dotted black;
     width: 280px;
