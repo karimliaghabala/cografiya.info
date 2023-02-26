@@ -18,6 +18,7 @@ import Geographynews from '../categories/geography/geography';
 import Geographynewstext from '../categories/geography/geographytext';
 import Geographytest from '../categories/tests/geographytest';
 import Videos from '../categories/videos/videos';
+import Maps from '../categories/maps/maps';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -44,7 +45,7 @@ const Main = () => {
                             <li> <Link to='/trails'>Ümumi və mövzu sınaqları </Link></li>
                             <li> <Link to='/mycountry'>Ölkəmizi tanıyaq </Link></li>
                             <li> <Link to='/geographynews'>Coğrafiya gündəliyi  </Link></li>
-                            <li> <Link to='/'>Xəritələr</Link></li>
+                            <li> <Link to='/maps'>Xəritələr</Link></li>
                             <li> <Link to='/videos'>Videolar</Link></li>
                             <li> <Link to='https://e-qanun.az/framework/18343' target='_blank'>Təhsil qanunu </Link></li>
                         </ul>
@@ -92,6 +93,7 @@ const Main = () => {
                             <Route path='/geographynewstext/:id' element={<Geographynewstext />} />
                             <Route path='/geographytest' element={<Geographytest />} />
                             <Route path='/videos' element={<Videos />} />
+                            <Route path='/maps' element={<Maps />} />
 
                         </Routes>
                     </div>

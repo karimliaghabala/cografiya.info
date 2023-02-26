@@ -1,7 +1,11 @@
 
 .header-video{
     width: 560px;
+    text-align: center;
 }
 .container-video>ul>li{
     list-style: none;
+    border: 1px dotted black;
+    width: 570px;
+    margin-bottom: 10px;
 }

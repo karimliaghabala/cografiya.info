@@ -14,7 +14,7 @@ const Videos = () => {
             <ul>
                 {data?.map(item => (
                     <li key={item.id}>
-                        <h1 className='header-video'>{item.title}</h1>
+                        <h2 className='header-video'>{item.title}</h2>
                         <div className="videos">
                             <iframe width="560" height="315" src={`https://www.youtube.com/embed/${item.linkid}`} title="Dünyamarkaları  Dünya ölkələrinin məhşur şirkətləri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
