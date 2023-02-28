@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './main.css'
 import { Link } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import Img from '../../images/newsletter-bg.gif'
 import Banner from '../../images/banner-bg.jpg'
 import Contact from '../contact/contact';
@@ -20,10 +19,12 @@ import Geographytest from '../categories/tests/geographytest';
 import Videos from '../categories/videos/videos';
 import Maps from '../categories/maps/maps';
 import Search from '../search-result/search';
+import LeftIcon from '../../images/chevron-left.svg'
+import RightIcon from '../../images/chevron-right (2).svg'
 
 const Main = () => {
-    const transition = { type: 'spring', duration: 1 }
     const [data, setData] = useState([])
+    const [icon,setIcon] = useState(true)
 
     useEffect(() => {
         fetch('https://api-portal-five.vercel.app/')
@@ -31,15 +32,20 @@ const Main = () => {
             .then(apiData => setData(apiData.slice(2,4)))
     }, [])
     data.reverse()
+    const clickIcon1 = ()=>{
+        setIcon(false)
+        if(icon===false){
+            setIcon(true)
+        }
+    }
     return (
         <main>
             <div className="container-main">
                 <div className="left-section">
-                    <motion.div className="category"
-                        initial={{ left: '-238px' }}
-                        whileInView={{ left: '50px' }}
-                        transition={{ ...transition, type: 'tween' }}
-                    >
+                <div id="icons" onClick={clickIcon1} >
+                            {icon?<img src={RightIcon} alt="" />:<img src={LeftIcon} alt="" />}
+                        </div>
+                    {icon?<div className="category">
                         <p>Kateqoriyalar</p>
                         <ul>
                             <li> <Link to='/tests'>KSQ/BSQ nümunələr </Link></li>
@@ -50,7 +56,7 @@ const Main = () => {
                             <li> <Link to='/videos'>Videolar</Link></li>
                             <li> <Link to='https://e-qanun.az/framework/18343' target='_blank'>Təhsil qanunu </Link></li>
                         </ul>
-                    </motion.div>
+                    </div>:null}
                     <div className="sub-news">
                         <div><img src={Img} alt="" /></div>
                         <form>

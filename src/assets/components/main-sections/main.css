@@ -180,3 +180,40 @@
     position: relative;
     left: -2px;
 }
+#icons{
+    display: none;
+}
+
+@media only screen and (max-width: 568px) {
+    .container-main {
+        max-width: 360px;
+        height: 450px;
+    }
+    .category{
+     width: 300px;
+     background-color: rgb(213, 224, 236);
+     position:relative;
+     z-index: 1;
+    }
+    .category>:nth-child(1){
+        font-size: 14px;
+    }
+    .category>ul li a{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+    #icons{
+        display: block;
+        position: absolute;
+        left:25px;
+        top: 130px;
+    }
+    #icons>:nth-child(1){
+        position: relative;
+        left: 30px;
+    }
+    .sub-news, .fresh-news{
+        display: none;
+    }
+}
