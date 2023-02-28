@@ -71,3 +71,19 @@
     list-style: none;
     background-color: rgba(56, 59, 221, 0.123);
 }
+@media only screen and (max-width: 921px) {
+    .container-gt{
+        display: block;
+    }
+    .con-hed{
+        text-align: start;
+
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .ksq{
+        border: 1px dotted black;
+        width: 260px;
+    }
+}

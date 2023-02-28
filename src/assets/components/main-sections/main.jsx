@@ -48,13 +48,13 @@ const Main = () => {
                     {icon?<div className="category">
                         <p>Kateqoriyalar</p>
                         <ul>
-                            <li> <Link to='/tests'>KSQ/BSQ nümunələr </Link></li>
-                            <li> <Link to='/trails'>Ümumi və mövzu sınaqları </Link></li>
-                            <li> <Link to='/mycountry'>Ölkəmizi tanıyaq </Link></li>
-                            <li> <Link to='/geographynews'>Coğrafiya gündəliyi  </Link></li>
-                            <li> <Link to='/maps'>Xəritələr</Link></li>
-                            <li> <Link to='/videos'>Videolar</Link></li>
-                            <li> <Link to='https://e-qanun.az/framework/18343' target='_blank'>Təhsil qanunu </Link></li>
+                            <li> <Link to='/tests' onClick={clickIcon1}>KSQ/BSQ nümunələr </Link></li>
+                            <li> <Link to='/trails' onClick={clickIcon1}>Ümumi və mövzu sınaqları </Link></li>
+                            <li> <Link to='/mycountry' onClick={clickIcon1}>Ölkəmizi tanıyaq </Link></li>
+                            <li> <Link to='/geographynews' onClick={clickIcon1}>Coğrafiya gündəliyi  </Link></li>
+                            <li> <Link to='/maps' onClick={clickIcon1}>Xəritələr</Link></li>
+                            <li> <Link to='/videos' onClick={clickIcon1}>Videolar</Link></li>
+                            <li> <Link to='https://e-qanun.az/framework/18343' onClick={clickIcon1} target='_blank'>Təhsil qanunu </Link></li>
                         </ul>
                     </div>:null}
                     <div className="sub-news">
