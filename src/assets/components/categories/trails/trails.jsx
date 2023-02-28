@@ -27,7 +27,7 @@ const Geographytest = () => {
                 <ul className='ksq'>
                     {data?.map(item => (
                         <li key={item.id}>
-                            <li>{item.body} <span>({item.datatime.slice(0,10)})</span></li>
+                            <li>{item.body} <span>({item.data_time.slice(0,10)})</span></li>
                             <li><Link to={item.link}>Yüklə</Link></li>
                             <li>Redaktor:{item.author}</li><hr/>
                         </li>
@@ -39,7 +39,7 @@ const Geographytest = () => {
                 <ul className='ksq'>
                 {data2?.map(item2 => (
                         <li key={item2.id}>
-                            <li>{item2.body} <span>({item2.datatime.slice(0,10)})</span></li>
+                            <li>{item2.body} <span>({item2.data_time.slice(0,10)})</span></li>
                             <li><Link to={item2.link}>Yüklə</Link></li>
                             <li>Redaktor:{item2.author}</li><hr/>
                         </li>
