@@ -18,7 +18,7 @@ const Footer = () => {
                     <li> <Link to='/trails'>Ümumi və mövzu sınaqları </Link></li>
                     <li> <Link to='/country'>Ölkəmizi tanıyaq </Link></li>
                     <li> <Link to='/geographynews'>Coğrafiya gündəliyi  </Link></li>
-                    <li> <Link to='/'>Xəritələr</Link></li>
+                    <li> <Link to='/maps'>Xəritələr</Link></li>
                     <li> <Link to='/'>Təhsil qanunu </Link></li>
                 </ul>
                 <div className="ka">

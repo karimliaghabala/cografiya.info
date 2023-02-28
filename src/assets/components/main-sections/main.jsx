@@ -19,6 +19,7 @@ import Geographynewstext from '../categories/geography/geographytext';
 import Geographytest from '../categories/tests/geographytest';
 import Videos from '../categories/videos/videos';
 import Maps from '../categories/maps/maps';
+import Search from '../search-result/search';
 
 const Main = () => {
     const transition = { type: 'spring', duration: 1 }
@@ -94,6 +95,7 @@ const Main = () => {
                             <Route path='/geographytest' element={<Geographytest />} />
                             <Route path='/videos' element={<Videos />} />
                             <Route path='/maps' element={<Maps />} />
+                            <Route path='/search' element={<Search />} />
 
                         </Routes>
                     </div>

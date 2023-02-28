@@ -1,10 +1,20 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './header.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion';
 
 const Header = () => {
   const transition = { type: 'spring', duration: 1 }
+  const [inputValue, setInputValue] = useState('')
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    fetch(`https://api-portal-five.vercel.app/search?q=${inputValue}`)
+        .then(res => res.json())
+        .then(apiData => setData(apiData))
+}, [])
+  console.log(data)
+  console.log(inputValue)
   return (
     <header>
       <div className="container-header">
@@ -36,8 +46,8 @@ const Header = () => {
           </div>
           <div className="search">
             <form>
-              <input type="text" placeholder='açar sözü daxil edin' />
-              <Link to='/'>Axtar</Link>
+              <input type="text" id='textInput' name='textInput' onChange={(e)=>{setInputValue(e.target.value)}} placeholder='ksq axtar' />
+              <Link to='/search'  onClick={useEffect}>Axtar</Link>
             </form>
           </div>
         </div>
