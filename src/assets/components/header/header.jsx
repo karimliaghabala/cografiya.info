@@ -8,7 +8,8 @@ const Header = () => {
   const transition = { type: 'spring', duration: 1 }
   const [inputValue, setInputValue] = useState('')
   const [data, setData] = useState([])
-  const [navMenu, setNavMenu] = useState(true)
+  const mobile = window.innerWidth<=921 ? true: false;
+  const [navMenu, setNavMenu] = useState(false)
   
   const clickİmg = () => {
       setNavMenu(true)
@@ -31,16 +32,16 @@ const Header = () => {
           whileInView={{ top: '20px' }}
           transition={{ ...transition, type: 'tween' }}
         >
-         { navMenu===true? <ul>
+         {(navMenu === false && mobile ===true )? (<img src={imageSvg} alt="" className='svg-nav' onClick={clickİmg} />):
+         <ul>
             <li><Link to='/' onClick={clickİmg}>ANA SƏHİFƏ</Link></li>
             <li><Link to='/about' onClick={clickİmg}>HAQQIMIZDA</Link></li>
             <li><Link to='/news' onClick={clickİmg}>XƏBƏRLƏR</Link></li>
             <li><Link to='/contact' onClick={clickİmg}>BİZİMLƏ ƏLAQƏ</Link> </li>
             <li><Link to='/sitemap' onClick={clickİmg}>SAYTIN XƏRİTƏSİ</Link></li>
-          </ul>:null}
+          </ul>}
         </motion.div>
         <div className="header-bottom">
-        <img src={imageSvg} alt="" className='svg-nav' onClick={clickİmg} />
           <div className="h1">
             <motion.div
               initial={{ left: '-238px' }}

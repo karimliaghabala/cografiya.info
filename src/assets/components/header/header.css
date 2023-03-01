@@ -100,8 +100,8 @@ a:hover{
         display: block;
         position: absolute;
         width: 50px;
-        left: 50px;
-        top: 5px;
+        left: 5px;
+        top: -15px;
     }
     .h1>:nth-child(1){
         font-size: 12px;

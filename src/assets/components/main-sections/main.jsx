@@ -24,39 +24,41 @@ import RightIcon from '../../images/chevron-right (2).svg'
 
 const Main = () => {
     const [data, setData] = useState([])
-    const [icon,setIcon] = useState(true)
+    const [icon, setIcon] = useState(false)
+    const mobile = window.innerWidth <= 921 ? true : false;
 
     useEffect(() => {
         fetch('https://api-portal-five.vercel.app/')
             .then(res => res.json())
-            .then(apiData => setData(apiData.slice(2,4)))
+            .then(apiData => setData(apiData.slice(2, 4)))
     }, [])
     data.reverse()
-    const clickIcon1 = ()=>{
-        setIcon(false)
-        if(icon===false){
-            setIcon(true)
+    const clickIcon1 = () => {
+        setIcon(true)
+        if (icon === true) {
+            setIcon(!true)
         }
     }
     return (
         <main>
             <div className="container-main">
                 <div className="left-section">
-                <div id="icons" onClick={clickIcon1} >
-                            {icon?<img src={RightIcon} alt="" />:<img src={LeftIcon} alt="" />}
-                        </div>
-                    {icon?<div className="category">
-                        <p>Kateqoriyalar</p>
-                        <ul>
-                            <li> <Link to='/tests' onClick={clickIcon1}>KSQ/BSQ nümunələr </Link></li>
-                            <li> <Link to='/trails' onClick={clickIcon1}>Ümumi və mövzu sınaqları </Link></li>
-                            <li> <Link to='/mycountry' onClick={clickIcon1}>Ölkəmizi tanıyaq </Link></li>
-                            <li> <Link to='/geographynews' onClick={clickIcon1}>Coğrafiya gündəliyi  </Link></li>
-                            <li> <Link to='/maps' onClick={clickIcon1}>Xəritələr</Link></li>
-                            <li> <Link to='/videos' onClick={clickIcon1}>Videolar</Link></li>
-                            <li> <Link to='https://e-qanun.az/framework/18343' onClick={clickIcon1} target='_blank'>Təhsil qanunu </Link></li>
-                        </ul>
-                    </div>:null}
+                    {(icon === false && mobile === true) ?
+                        (<div id="icons" onClick={clickIcon1} >
+                            {icon ? <img src={RightIcon} alt="" /> : <img src={LeftIcon} alt="" />}
+                        </div>) :
+                        <div className="category">
+                            <p>Kateqoriyalar</p>
+                            <ul>
+                                <li> <Link to='/tests' onClick={clickIcon1}>KSQ/BSQ nümunələr </Link></li>
+                                <li> <Link to='/trails' onClick={clickIcon1}>Ümumi və mövzu sınaqları </Link></li>
+                                <li> <Link to='/mycountry' onClick={clickIcon1}>Ölkəmizi tanıyaq </Link></li>
+                                <li> <Link to='/geographynews' onClick={clickIcon1}>Coğrafiya gündəliyi  </Link></li>
+                                <li> <Link to='/maps' onClick={clickIcon1}>Xəritələr</Link></li>
+                                <li> <Link to='/videos' onClick={clickIcon1}>Videolar</Link></li>
+                                <li> <Link to='https://e-qanun.az/framework/18343' onClick={clickIcon1} target='_blank'>Təhsil qanunu </Link></li>
+                            </ul>
+                        </div>}
                     <div className="sub-news">
                         <div><img src={Img} alt="" /></div>
                         <form>
@@ -71,7 +73,7 @@ const Main = () => {
                         <ul>
                             {data?.map(item => (
                                 <li className="news" key={item.id}>
-                                    <p>Vaxt: {item.published_date.slice(0,5)}</p>
+                                    <p>Vaxt: {item.published_date.slice(0, 5)}</p>
                                     <p>{item.title}</p>
                                     <Link to={`/newstext/${item.id}`}>Ətraflı oxumaq üçün klik edin</Link>
                                 </li>
