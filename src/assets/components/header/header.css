@@ -78,7 +78,7 @@ a:hover{
 .svg-nav{
     display: none;
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 576px) {
     header{
         max-width: 310px;
         height:150px
@@ -118,7 +118,7 @@ a:hover{
         left: 30px;
     }
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 768px) {
     header{
         max-width: 360px;
         height:150px
@@ -127,7 +127,7 @@ a:hover{
         max-width: 310px
     }
   }
-  @media only screen and (max-width: 921px) {
+  @media only screen and (max-width: 992px) {
     header{
         max-width: 424px;
         height:150px
@@ -135,7 +135,8 @@ a:hover{
     .header-bottom{
         max-width: 310px
     }
-    .h1>:nth-child(2){display: none;
+    .h1>:nth-child(2){
+        display: none;
     }
     .search{
         left: 50px;
