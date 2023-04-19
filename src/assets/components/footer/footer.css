@@ -35,16 +35,15 @@
     .footer ul>li{
         display: block;
         margin-bottom: 10px;
+        position: relative;
+        left: 130px;
     }
-    .ka>p{
-        font-size: 12px;
-    }
-    .ka>a{
-        font-size: 16px;
-        margin-top: 15px;
+    .ka{
+        display: block;
+        text-align: center;
     }
     .footer{
-        height: 200px;
+        height: 220px;
     }
 }
 @media only screen and (max-width: 921px) {
@@ -54,16 +53,15 @@
     .footer ul>li{
         display: block;
         margin-bottom: 10px;
+        position: relative;
+        left: 130px;
     }
-    .ka>p{
-        font-size: 12px;
-    }
-    .ka>a{
-        font-size: 16px;
-        margin-top: 15px;
+    .ka{
+        display: block;
+        text-align: center;
     }
     .footer{
-        height: 200px;
+        height: 230px;
     }
 
 }
