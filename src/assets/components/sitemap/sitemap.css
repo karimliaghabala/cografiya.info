@@ -7,3 +7,13 @@
 .info  h3{
     color: blue;
 }
+@media only screen and (max-width: 576px) {
+    .info{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 921px) {
+    .info{
+        width: 300px;
+    }
+}

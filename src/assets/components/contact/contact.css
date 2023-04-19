@@ -44,3 +44,19 @@ button:hover{
     border: 1px solid white;
     background-color: #55aed1;
 }
+@media only screen and (max-width: 576px) {
+    #contacts-form input{
+        width: 160px;
+    }
+    #contacts-form textarea{
+        width: 160px;
+    }
+}
+@media only screen and (max-width: 921px) {
+    #contacts-form input{
+        width: 160px;
+    }
+    #contacts-form textarea{
+        width: 160px;
+    }
+}
