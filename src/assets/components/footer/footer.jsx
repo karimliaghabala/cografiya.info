@@ -22,9 +22,9 @@ const Footer = () => {
                     <li> <Link to='/'>Təhsil qanunu </Link></li>
                 </ul>
                 <div className="ka">
-                    <p>Copyright © 2023/</p>
+                    <p>Copyright © 2023</p>
                     <Link to='/'>Karimli Aghabala</Link>
-                    <p>/Bütün hüquqlar qorunur</p>
+                    <p>Bütün hüquqlar qorunur</p>
                 </div>
             </div>
         </div>
